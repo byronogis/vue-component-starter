@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-starter",
+  "name": "vue-component-starter",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@8.15.6",

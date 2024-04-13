@@ -10,7 +10,7 @@
     "baseUrl": ".",
     // baseUrl 改变了，基础配置中的 paths 也需要一并重写
     "paths": {
-      "@monorepo-starter/*": ["../packages/*/src"]
+      "@vue-component-starter/*": ["../packages/*/src"]
     },
     "types": ["node"]
   },

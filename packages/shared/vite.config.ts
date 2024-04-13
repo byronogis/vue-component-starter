@@ -3,7 +3,7 @@ import dts from 'vite-plugin-dts'
 import { pascalCase } from 'change-case'
 import pkg from './package.json'
 
-const currentMonorepoPkgNameRegex = /@monorepo-starter\/(.*)/
+const currentMonorepoPkgNameRegex = /@vue-component-starter\/(.*)/
 
 export default defineConfig({
   plugins: [

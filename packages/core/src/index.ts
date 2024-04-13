@@ -1,4 +1,4 @@
-import { shared } from '@monorepo-starter/shared'
+import { shared } from '@vue-component-starter/shared'
 
 // eslint-disable-next-line no-console
 console.log(shared())

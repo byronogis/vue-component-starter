@@ -1,20 +1,20 @@
 {
-  "name": "@monorepo-starter/core",
+  "name": "@vue-component-starter/core",
   "type": "module",
   "version": "0.0.0",
-  "description": "Core package for monorepo-starter",
+  "description": "Core package for vue-component-starter",
   "author": {
     "name": "Byron",
     "email": "byronogis@outlook.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/byronogis/monorepo-starter",
+  "homepage": "https://github.com/byronogis/vue-component-starter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/byronogis/monorepo-starter.git"
+    "url": "https://github.com/byronogis/vue-component-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/byronogis/monorepo-starter/issues"
+    "url": "https://github.com/byronogis/vue-component-starter/issues"
   },
   "keywords": [
     "monorepo",
@@ -37,6 +37,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@monorepo-starter/shared": "workspace:^"
+    "@vue-component-starter/shared": "workspace:^"
   }
 }

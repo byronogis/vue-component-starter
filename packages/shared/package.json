@@ -1,20 +1,20 @@
 {
-  "name": "@monorepo-starter/shared",
+  "name": "@vue-component-starter/shared",
   "type": "module",
   "version": "0.0.0",
-  "description": "Shared package for monorepo-starter",
+  "description": "Shared package for vue-component-starter",
   "author": {
     "name": "Byron Ogis",
     "email": "byronogis@outlook.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/byronogis/monorepo-starter",
+  "homepage": "https://github.com/byronogis/vue-component-starter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/byronogis/monorepo-starter.git"
+    "url": "https://github.com/byronogis/vue-component-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/byronogis/monorepo-starter/issues"
+    "url": "https://github.com/byronogis/vue-component-starter/issues"
   },
   "keywords": [
     "monorepo"

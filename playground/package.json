@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-starter/playground",
+  "name": "@vue-component-starter/playground",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,6 +8,6 @@
 
   },
   "dependencies": {
-    "@monorepo-starter/core": "workspace:^"
+    "@vue-component-starter/core": "workspace:^"
   }
 }

@@ -5,7 +5,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: /^@monorepo-starter\/(.+)$/,
+        find: /^@vue-component-starter\/(.+)$/,
         replacement: fileURLToPath(new URL(`../packages/$1/src`, import.meta.url)),
       },
     ],

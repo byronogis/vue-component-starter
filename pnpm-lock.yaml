@@ -44,7 +44,7 @@ importers:
 
   packages/core:
     dependencies:
-      '@monorepo-starter/shared':
+      '@vue-component-starter/shared':
         specifier: workspace:^
         version: link:../shared
 
@@ -56,7 +56,7 @@ importers:
 
   playground:
     dependencies:
-      '@monorepo-starter/core':
+      '@vue-component-starter/core':
         specifier: workspace:^
         version: link:../packages/core
 
