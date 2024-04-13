@@ -1,0 +1,22 @@
+{
+  // 集成基础配置
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": [
+      "ESNext"
+      // 浏览器的 DOM API（选用）
+      // "DOM", "DOM.Iterable"
+    ],
+    "baseUrl": ".",
+    // baseUrl 改变了，基础配置中的 paths 也需要一并重写
+    "paths": {
+      "@monorepo-starter/*": ["../packages/*/src"]
+    },
+    "types": ["node"]
+  },
+  "include": [
+    // playground 应用会引用其他子模块的源码，因此都要包含到 include 中
+    "../packages/*/src",
+    "src"
+  ]
+}

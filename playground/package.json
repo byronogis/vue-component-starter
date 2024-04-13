@@ -1,0 +1,13 @@
+{
+  "name": "@monorepo-starter/playground",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "serve": "tsx ./src/index.ts"
+
+  },
+  "dependencies": {
+    "@monorepo-starter/core": "workspace:^"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@monorepo-starter/core",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Core package for monorepo-starter",
+  "author": {
+    "name": "Byron",
+    "email": "byronogis@outlook.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/byronogis/monorepo-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byronogis/monorepo-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/byronogis/monorepo-starter/issues"
+  },
+  "keywords": [
+    "monorepo",
+    "starter"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@monorepo-starter/shared": "workspace:^"
+  }
+}
