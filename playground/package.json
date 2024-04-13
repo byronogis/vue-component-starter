@@ -3,9 +3,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "serve": "tsx ./src/index.ts"
+    "dev": "vite"
 
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@vue-component-starter/core": "workspace:^"

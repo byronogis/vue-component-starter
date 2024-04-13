@@ -1,8 +1,4 @@
-import { shared } from '@vue-component-starter/shared'
+import 'virtual:uno.css'
+import MyComponent from './MyComponent.vue'
 
-// eslint-disable-next-line no-console
-console.log(shared())
-
-export function core() {
-  return 'core'
-}
+export { MyComponent }

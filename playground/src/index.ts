@@ -1,4 +1,5 @@
-import { core } from '@vue-component-starter/core'
+import { createApp } from 'vue'
+import App from './App.vue'
+import 'virtual:uno.css'
 
-// eslint-disable-next-line no-console
-console.log(core())
+createApp(App).mount('#app')

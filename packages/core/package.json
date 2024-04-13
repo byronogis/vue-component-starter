@@ -18,6 +18,7 @@
   },
   "keywords": [
     "monorepo",
+    "vue",
     "starter"
   ],
   "exports": {
@@ -25,7 +26,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.umd.cjs"
-    }
+    },
+    "./*": "./*"
   },
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
@@ -36,7 +38,19 @@
   "scripts": {
     "build": "vite build"
   },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
   "dependencies": {
-    "@vue-component-starter/shared": "workspace:^"
-  }
+    "vue-demi": "latest"
+  },
+  "browserslist": [
+    "> 0.2% and not dead"
+  ]
 }
