@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "antfu.unocss",
+    "csstools.postcss",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint"
   ]
