@@ -23,8 +23,6 @@
     "eslint-plugin-format": "^0.1.0",
     "husky": "^9.0.11",
     "postcss-nested": "^6.0.1",
-    "ramda": "^0.29.1",
-    "tsx": "^4.7.2",
     "typescript": "^5.4.5",
     "unocss": "^0.59.2",
     "vite": "^5.2.8",
