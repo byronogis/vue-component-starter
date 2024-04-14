@@ -3,6 +3,7 @@
     "antfu.unocss",
     "csstools.postcss",
     "esbenp.prettier-vscode",
+    "vue.volar",
     "dbaeumer.vscode-eslint"
   ]
 }
