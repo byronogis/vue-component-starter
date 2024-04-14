@@ -1,0 +1,28 @@
+{
+  // 集成基础配置
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      // 浏览器的 DOM API（选用）
+      "DOM", "DOM.Iterable"
+    ],
+    "baseUrl": ".",
+    // baseUrl 改变了，基础配置中的 paths 也需要一并重写
+    "paths": {
+      "@vue-component-starter/*": ["../packages/*/src"]
+    },
+    "types": ["node"]
+  },
+  "include": [
+    // docs 应用会引用其他子模块的源码，因此都要包含到 include 中
+    "../packages/*/src",
+    ".vitepress/**/*",
+    ".vitepress/**/*.md",
+    // demo 目录存放用例代码
+    "demo/**/*",
+    // 脚本目录，之后会涉及
+    "scripts/**/*"
+  ],
+  "exclude": ["**/dist", "**/cache"]
+}

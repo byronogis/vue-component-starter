@@ -1,14 +1,34 @@
 <script setup lang="ts">
 import { ref } from 'vue-demi'
+import type {
+  MyComponentEmits,
+  MyComponentExpose,
+  MyComponentProps,
+  MyComponentSlots,
+} from './MyComponent.api.ts'
+
+const props = withDefaults(defineProps<MyComponentProps>(), {
+  msg: 'Hello world!',
+})
+
+const emits = defineEmits<MyComponentEmits>()
+
+defineSlots<MyComponentSlots>()
+
+defineExpose<MyComponentExpose>({
+  msg: props.msg,
+})
 
 const count = ref(0)
 </script>
 
 <template>
-  <div class="vue-component-starter">
-    <h2>vue-component-starter <i class="i-mdi:account-cowboy-hat-outline " /></h2>
+  <div class="vue-component-starter" @click="emits('click', props.msg)">
+    <slot :msg="props.msg">
+      <h2>{{ props.msg }}</h2>
+    </slot>
 
-    <div class="mt-4    text-4 mb-4 color-#000">
+    <div class="mt-4    text-4 mb-4">
       Count: {{ count }}
     </div>
 

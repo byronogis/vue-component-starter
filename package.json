@@ -6,6 +6,7 @@
   "scripts": {
     "build": "pnpm --filter './packages/*' run build",
     "dev": "pnpm --filter './playground' run dev",
+    "docs:dev": "pnpm --filter './docs' run docs:dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
